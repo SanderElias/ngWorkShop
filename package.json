@@ -1,0 +1,19 @@
+{
+  "name": "ngworkshop",
+  "version": "1.0.0",
+  "description": "Angular 1 day workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanderElias/ngWorkShop.git"
+  },
+  "author": "Sander Elias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SanderElias/ngWorkShop/issues"
+  },
+  "homepage": "https://github.com/SanderElias/ngWorkShop#readme"
+}
