@@ -1,45 +1,4 @@
 {
   "attendees": [
-    {
-      "id": 1,
-      "isPresent": true
-    },
-    {
-      "name": "",
-      "id": 2,
-      "isPresent": true
-    },
-    {
-      "id": 3,
-      "name": "Test",
-      "isPresent": true
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6,
-      "isPresent": false
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9,
-      "name": "asdas"
-    },
-    {
-      "id": 10
-    },
-    {
-      "name": "blah",
-      "id": 11
-    }
   ]
 }
