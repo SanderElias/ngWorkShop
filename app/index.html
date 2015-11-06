@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html ng-app>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Angular Workshop</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/keys.css">
 </head>
+
 <body ng-init="todos=[]">
-    <h1>First (BAD!!) sample ;)</h1>
-
-    <input type="text" ng-model='todo' ng-blur='todos.push(todo);todo=""'>
-
-    <ul>
-        <li ng-repeat='item in todos'>{{item}}</li>
-    </ul>
-
-
+    <h1>Some smart key's</h1>
+    <key-board>
+        <key-board-row>
+            <key-key>1</key-key>
+            <key-key>2</key-key>
+            <key-key>3</key-key>
+        </key-board-row>
+        <key-board-row>
+            <key-key>4</key-key>
+            <key-key>5</key-key>
+            <key-key>6</key-key>
+        </key-board-row>
+        <key-board-row>
+            <key-key>7</key-key>
+            <key-key>8</key-key>
+            <key-key>9</key-key>
+        </key-board-row>
+        <key-board-row>
+            <key-key>*</key-key>
+            <key-key>0</key-key>
+            <key-key>#</key-key>
+        </key-board-row>
+    </key-board>
+    <hr>
+    <h3>First assignment!</h3>
+    <p>Make a page like this, with similar 'keys'</p>
     <script src="/node_modules/angular/angular.js"></script>
 </body>
+
 </html>

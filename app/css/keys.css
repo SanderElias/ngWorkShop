@@ -1,0 +1,43 @@
+body {
+  font-size:2em;
+}
+
+key-key {
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+  width:1.2em;
+  height:1.6em;
+  border:0px solid black;
+  padding-left:.3em;
+  padding-right:.3em;
+  border-radius:.5em;
+  box-shadow: inset .2em -.2em .2em 0 rgba(0,0,0,0.5);
+  margin:.2em;
+  background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  cursor:pointer;
+  -webkit-user-select:none;
+}
+
+key-key:active {
+  box-shadow: inset -.2em .2em .2em 0 rgba(0,0,0,0.5);
+}
+
+key-key:hover{
+    background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+}
+
+key-board {
+  display:flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+  justify-content:center;
+}
+
+key-board-row {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:center;
+}
