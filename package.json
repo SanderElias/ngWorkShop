@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "gulp karma",
-    "server": "node node_modules/live-server/live-server.js"
+    "server": "node node_modules/live-server/live-server.js --ignore='./attendees.json'"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "angular": "^1.4.7",
     "bootstrap": "^3.3.5",
     "gulp": "^3.9.0",
+    "json-server": "^0.8.2",
     "live-server": "^0.8.2"
   }
 }

@@ -1,0 +1,22 @@
+<div class='container'>
+    <div class="row">
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" ng-model="vm.active.name" class="form-control">
+            </div>
+            <button class="btn" ng-click="vm.save(vm.active);newOne=''">Add attendee</button>
+        </form>
+    </div>
+    <br>
+    <div ng-repeat='attendee in vm.attendees'
+         class='panel'
+         ng-class="attendee.isPresent ? 'panel-success': 'panel-warning'"
+         ng-click="attendee.isPresent = !attendee.isPresent;vm.save(attendee)">
+
+        <div class="panel-heading">
+            &nbsp;{{attendee.name}}
+            <button class="btn btn-xs pull-left" ng-click="vm.active=attendee">edit</button>
+        </div>
+
+    </div>
+</div>
