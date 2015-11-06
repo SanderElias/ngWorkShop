@@ -4,7 +4,8 @@
   "description": "Angular 1 day workshop",
   "main": "index.js",
   "scripts": {
-    "test": "gulp karma"
+    "test": "gulp karma",
+    "server": "node node_modules/live-server/live-server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/SanderElias/ngWorkShop/issues"
   },
-  "homepage": "https://github.com/SanderElias/ngWorkShop#readme"
+  "homepage": "https://github.com/SanderElias/ngWorkShop#readme",
+  "devDependencies": {
+    "angular": "^1.4.7",
+    "bootstrap": "^3.3.5",
+    "gulp": "^3.9.0",
+    "live-server": "^0.8.2"
+  }
 }
