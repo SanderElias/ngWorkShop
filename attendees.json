@@ -1,4 +1,9 @@
 {
   "attendees": [
+    {
+      "name": "Sander Elias",
+      "id": 1,
+      "isPresent": false
+    }
   ]
 }
