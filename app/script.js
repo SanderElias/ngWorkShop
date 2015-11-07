@@ -1,20 +1,22 @@
 (function (){
     "use strict";
 
+    console.log(angular.version);
+
     angular
         .module('attendees', [])
+        .component('sePresent', sePresent())
         .factory('AttendeeService', AttendeeService)
-        .directive('sePresent', sePresent);
+        ;
+
 
     /* @ngInject */
     function sePresent () {
-        var directive = {
-            controller:   sePresentController,
-            controllerAs: "vm",
-            restrict:     "E",
-            templateUrl:  "sePresent.tpl.html"
+        var component = {
+            controller:  sePresentController,
+            templateUrl: "sePresent.tpl.html"
         };
-        return directive;
+        return component;
     }
 
     /* @ngInject */
