@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "gulp karma",
+    "json": "node node_modules/json-server/bin/index.js attendees.json",
     "server": "node node_modules/live-server/live-server.js --ignore='./attendees.json'"
   },
   "repository": {
