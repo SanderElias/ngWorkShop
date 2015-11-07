@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "gulp karma",
+    "json": "node node_modules/json-server/bin/index.js attendees.json",
     "server": "node node_modules/live-server/live-server.js"
   },
   "repository": {
@@ -21,6 +22,7 @@
     "angular": "^1.4.7",
     "bootstrap": "^3.3.5",
     "gulp": "^3.9.0",
+    "json-server": "^0.8.2",
     "live-server": "^0.8.2"
   }
 }
