@@ -6,7 +6,8 @@
   "scripts": {
     "test": "gulp karma",
     "json": "node node_modules/json-server/bin/index.js attendees.json",
-    "server": "node node_modules/live-server/live-server.js"
+    "server": "node node_modules/live-server/live-server",
+    "watch": "node node_modules/gulp/bin/gulp watch"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,10 @@
   "devDependencies": {
     "angular": "^1.4.7",
     "bootstrap": "^3.3.5",
+    "grunt": "^0.4.5",
     "gulp": "^3.9.0",
+    "gulp-concat-sourcemap": "^1.3.1",
+    "gulp-ng-annotate": "^1.1.0",
     "json-server": "^0.8.2",
     "live-server": "^0.8.2"
   }

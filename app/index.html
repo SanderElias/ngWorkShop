@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="todoApp" ng-strict>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Angular Workshop</title>
+    <title>Proper todo</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="">
     <style>
     .done {
@@ -16,18 +18,13 @@
     </style>
 </head>
 
-<body ng-init="todos=[{text:'Show Angular'},{text:'make better samples',done:true}]">
-    <h1>First (BAD!!) sample ;)</h1>
-    <input type="text" ng-model='todo' ng-blur='todos.push({text:todo,done:false});todo=""'>
-    <button>Add todo</button>
-    <ul class='list'>
-        <li ng-repeat='item in todos'
-            ng-click='item.done=!item.done'
-            ng-class="{done: item.done}">
-            {{item.text}}
-        </li>
-    </ul>
-    <script src="angular/angular.js"></script>
+<body class='container'>
+    <h1>A proper ToDo sample</h1>
+    <todo>
+        Loading...
+    </todo>
+    <script src="/libs/angular/angular.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+    <div class="panel-header">
+        <span class="checkbox">&nbsp;
+            <label>
+              <input
+                type="checkbox"
+                ng-model='todoItem.item.done'>
+                <span ng-class="todoItem.item.done ? 'done' : 'open'">
+                    {{todoItem.item.description}}
+                </span>
+            </label>
+            <button class="btn btn-xs btn-warning pull-right">del</button>
+
+        </span>
+    </div>
+</div>
