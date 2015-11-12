@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Proper todo</title>
+    <title>Our first routing app</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="">
@@ -18,12 +18,25 @@
     </style>
 </head>
 
-<body class='container'>
+<body class='container-fluid'>
     <h1>A proper ToDo sample</h1>
-    <todo>
-        Loading...
-    </todo>
+    <div class="row" >
+        <div class="col-xs-2 panel panel-default">
+           <div class="panel-heading">
+                <h3 class="panel-title">Site-nav</h3>
+                <!-- <h6 class="panel-title">Pehaps, someday, this will be pretty:)</h6> -->
+           </div>
+           <div class="panel-body">
+                <a href="#/todo">todo</a>
+           </div>
+        </div>
+        <div class="col-xs-10" ng-view>
+            Loading...
+        </div>
+    </div>
+
     <script src="/libs/angular/angular.js"></script>
+    <script src="/libs/angular/angular-route.js"></script>
     <script src="script.js"></script>
 </body>
 
