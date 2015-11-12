@@ -8,7 +8,7 @@
     function todo () {
         return {
             controller:  todoController,
-            templateUrl: "todo/todo.tpl.html",
+            templateUrl: "todo/todoList/todo.tpl.html",
         };
     }
 

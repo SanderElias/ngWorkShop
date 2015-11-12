@@ -1,6 +1,7 @@
 var gulp       = require('gulp');
 var concat     = require('gulp-concat-sourcemap');
 var ngAnnotate = require('gulp-ng-annotate');
+var plumber    = require('gulp-plumber');
 
 
 var jsFiles   = ['app/script.js', 'app/**/*module.js', 'app/**/*.js'];
@@ -11,8 +12,9 @@ var dist      = './build/';
 
 gulp.task('concat', function () {
     return gulp.src(jsFiles)
+        .pipe(plumber())
         .pipe(ngAnnotate())
-        .pipe(concat('script.js', {}))
+        .pipe(concat('script.js', {sourceRoot: '/'}))
         .pipe(gulp.dest(dist));
 });
 

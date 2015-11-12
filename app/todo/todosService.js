@@ -26,7 +26,7 @@
 
         function load() {
             return service.done = $http
-                .get('http://localhost:3000/todos/')
+                .get('http://localhost:4000/todos/')
                 .then(response => response.data)
                 .then(data     => Array.isArray(data) && data.forEach(updateList))
                 ;
@@ -57,13 +57,13 @@
             if (item.id === undefined) {
                 // new item
                 $http
-                    .post('http://localhost:3000/todos/', item)
+                    .post('http://localhost:4000/todos/', item)
                     .then(response => response.data) //parse response
                     .then(newItem => updateList(newItem)) // update 'master'
                     ;
             } else {
                 $http
-                    .put('http://localhost:3000/todos/' + item.id, item);
+                    .put('http://localhost:4000/todos/' + item.id, item);
                     //Item is already in list. done!
                 }
         }

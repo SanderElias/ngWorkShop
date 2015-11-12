@@ -8,7 +8,7 @@
     function todoItem () {
         return {
             controller:  todoItemController,
-            templateUrl: "todo/todoItem.tpl.html",
+            templateUrl: "todo/todoItem/todoItem.tpl.html",
             bindings:    {
                 item: '=todoItem'
             }
