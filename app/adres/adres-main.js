@@ -3,7 +3,7 @@
 
     angular
         .module('adres', [
-            'adres.list',
+            'adres.list'
             //'adres.edit'
         ]);
 }());

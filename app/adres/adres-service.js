@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('adres')
+        .module('adres.service', [])
         .factory('AdresService', AdresService);
 
 
@@ -16,7 +16,7 @@
         };
 
         //fire of request at init, and cache in service
-        load()
+        service.done = load()
           .then(data => service.data = data);
 
         return service;
@@ -25,9 +25,9 @@
 
         function load() {
             return $http
-                .get('localhost:4000/adres')
+                .get('http://localhost:4000/adres/')
                 .then(result => result.data)
-                .catch(err => console.err(err));
+                .catch(err => console.error(err));
         }
     }
 }());
