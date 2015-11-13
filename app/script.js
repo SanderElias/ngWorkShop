@@ -3,6 +3,7 @@
 
     angular
         .module('todoApp', [
-            "ngRoute"
+            "ngRoute",
+            "adres"
         ]);
 }());

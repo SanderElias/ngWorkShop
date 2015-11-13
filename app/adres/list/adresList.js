@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('adres.list')
+        .module('adres.list', ['adres.service'])
         .component('adresList', adresList());
 
     function adresList () {

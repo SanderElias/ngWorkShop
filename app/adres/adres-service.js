@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('adres')
+        .module('adres', [])
         .factory('AdresService', AdresService);
 
 
