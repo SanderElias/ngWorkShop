@@ -4,6 +4,6 @@
     angular
         .module('adres', [
             'adres.list',
-            'adres.edit'
+            //'adres.edit'
         ]);
 }());
